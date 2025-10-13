@@ -18,10 +18,12 @@ import logo from "../assets/icons/mainlogo.png"
 
 export const mainlogo = logo;
 export const navbar = ["Home", "Our Program", "The Piscine", "About Us", "Contact Us"];
+
 export const heroData = [
   {
     info: "⚡ Application now open in Lagos, Ilorin & Otukpo. Limited slots available. Play the Selection Game today to qualify.",
-    title: "Become a world class full-stack developer",
+    title: "Become a world class",
+    title2 : "full-stack developer",
     subtitle:
       "Train for excellence with Learn2Earn. Join a globally proven, AI-focused digital skills training program designed to launch your tech career. Gain real-world experience, earn stipends while you learn, and secure a guaranteed 2-year job placement — all at zero cost to you.",
     btnText : ["Play the Game", "Learn More"],

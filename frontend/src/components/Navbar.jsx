@@ -1,10 +1,13 @@
 import React from 'react'
-import { navbar, mainlogo } from '../components/constants' // assuming it's exported from constants.js
+import { navbar } from '../components/constants' // assuming it's exported from constants.js
 
 const Navbar = () => {
   return (
     <div className='py-5 flex flex-row justify-between '>
-      <img src={mainlogo} alt="" className="w-50"/>
+      <div>
+      {/* <img src={mainlogo} alt="" className="w-50"/> */}
+      MyLogo
+      </div>
       
 
       <ul className="flex gap-4">
