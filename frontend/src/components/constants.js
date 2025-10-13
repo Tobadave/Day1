@@ -14,9 +14,10 @@ import global from "../assets/icons/global.png"
 import peer from "../assets/icons/peer.png"
 import game from "../assets/icons/gamified.png"
 import campus from "../assets/icons/campus.png"
+import logo from "../assets/icons/mainlogo.png"
 
+export const mainlogo = logo;
 export const navbar = ["Home", "Our Program", "The Piscine", "About Us", "Contact Us"];
-
 export const heroData = [
   {
     info: "⚡ Application now open in Lagos, Ilorin & Otukpo. Limited slots available. Play the Selection Game today to qualify.",
