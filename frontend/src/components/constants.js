@@ -8,11 +8,11 @@ import partner6 from "../assets/icons/saillab.jpeg"
 
 //logo
 import cash from "../assets/icons/cashless.png"
-import net from "../assets/icons/internet"
-import placment from "../assets/icons/placement"
-import global from "../assets/icons/global"
+import net from "../assets/icons/internet.png"
+import placment from "../assets/icons/placement.png"
+import global from "../assets/icons/global.png"
 import peer from "../assets/icons/peer.png"
-import game from "../assets/icons/gamified"
+import game from "../assets/icons/gamified.png"
 import campus from "../assets/icons/campus.png"
 
 export const navbar = ["Home", "Our Program", "The Piscine", "About Us", "Contact Us"];
