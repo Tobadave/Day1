@@ -15,9 +15,17 @@ import peer from "../assets/icons/peer.png"
 import game from "../assets/icons/gamified.png"
 import campus from "../assets/icons/campus.png"
 import logo from "../assets/icons/mainlogo.png"
+// import path from "path"
 
 export const mainlogo = logo;
-export const navbar = ["Home", "Our Program", "The Piscine", "About Us", "Contact Us"];
+
+export const navbar = [
+    {name:"Home", path:"/"},
+    {name:"Our Program", path:"/program"},
+    {name:"The Piscine", path: "/piscine"},
+    {name:"About Us", path: "/about"},
+    {name:"Contact Us", path: "/contact"}
+];
 
 export const heroData = [
   {

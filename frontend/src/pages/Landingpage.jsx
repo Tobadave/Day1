@@ -9,10 +9,9 @@ import Details from '../components/Details'
 const Landingpage = () => {
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Video />
-    <Details />
+      <Hero />
+      <Video />
+      <Details />
     </>
   )
 }
