@@ -1,5 +1,5 @@
 import React from 'react'
-import { footer, navbar } from '../constants'
+import { footer, navbar, mainlogo } from '../constants'
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -8,25 +8,28 @@ const Footer = () => {
 
   return (
     <>
-        <footer>
-            <div className='justify-center'>
-                <h1>{data.h1}</h1>
-                <h1>{data.details}</h1>
+        <footer className=''>
+            <div className='flex flex-col items-center gap-8'>
+                <h1 className='text-3xl font-semibold'>{data.h1}</h1>
+                <h1 className='w-3/5 text-center
+                text-gray-400'>{data.details}</h1>
 
-                <button className='btn'>
+                <button className='btn w-fit'>
                     {data.btnText}
                 </button>
 
-            <hr className="w-3/4 my-6 border-gray-500" />
+            <hr className="w-full my-10 border-gray-500" />
             </div>
 
             {/* icons */}
-            <div className='flex md:flex-row lg:w-2/4 h-auto gap-2'>
+            <div className='flex md:flex-row lg:w-2/4 md:h-40 
+            text-[13px] gap-2 mb-10 font-semibold'>
 
                 <span className='flex flex-col
                 justify-between flex-1'>
-                    <img src="" alt="Logo" />
-                    <h1 className='text-sm'>{data.info}</h1>
+                    <img src={mainlogo} alt="Logo" className='
+                    w-40'/>
+                    <h1 className=''>{data.info}</h1>
                     
                     <div className='flex flex-row gap-2'>
                         {data.down.map((item, idx)=>(
@@ -37,18 +40,22 @@ const Footer = () => {
                     </div>
                 </span>
 
-                <span className='flex flex-col flex-1'>
+                <span className='flex flex-col flex-1 justify-between'>
                     <h1 className='font-bold md:text-lg mb-3'>{data.h2}</h1>
-                    {navbar.map((item, idx)=>(
-                        <NavLink
-                            key={idx}
-                            to={item.path}
-                            
-                            className='hover:underline'
-                            >
-                                {item.name}
-                        </NavLink>
-                    ))}
+                    
+                    <div className='flex flex-col'>
+                        {navbar.map((item, idx)=>(
+                            <NavLink
+                                key={idx}
+                                to={item.path}
+                                
+                                className='font-light hover:underline
+                                text-gray-200'
+                                >
+                                    {item.name}
+                            </NavLink>
+                        ))}
+                    </div>
                 </span>
             </div>
         

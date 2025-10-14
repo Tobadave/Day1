@@ -18,16 +18,21 @@ const Details = () => {
             ))}
           </div>
 
-          <hr className="w-9/10 my-6 border-gray-500" />
+          <hr className="w-full my-6 border-gray-500" />
 
           {/* About Section */}
-          <div className="flex flex-col md:flex-row justify-between gap-6 px-8 text-center md:text-left">
-            <div className="flex-1 text-xl font-bold">{item.aboutText}</div>
-            <div className="flex-1 text-justify">{item.abouth2}</div>
+          
+          <div className="flex flex-col md:flex-row justify-between gap-6 
+            text-center md:text-left my-10">
+
+            <div className="flex-1 text-2xl font-semibold">{item.aboutText}</div>
+
+            <div className="flex-1 text-justify leading-5
+            text-sm text-gray-200">{item.abouth2}</div>
           </div>
 
           {/* Numbers / Stats */}
-          <div className="flex flex-wrap lg:w-3/4 justify-evenly my-8 gap-10">
+          <div className="flex flex-wrap lg:w-full justify-between my-8 gap-10 py-15">
             {item.details.map((detail, idx) => (
               <div key={idx} className="flex flex-col items-center">
                 <h1 className="text-3xl font-bold">{detail.num}</h1>

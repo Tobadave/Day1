@@ -11,9 +11,11 @@ const Landingpage = () => {
   return (
     <>
       <Hero />
-      <Video />
-      <Details />
-      <Footer />
+      <div className='px-10'>
+        <Video />
+        <Details />
+        <Footer />
+      </div>
     </>
   )
 }

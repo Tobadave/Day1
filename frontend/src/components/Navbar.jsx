@@ -14,7 +14,7 @@ const Navbar = () => {
             to={item.path}
             className={({ isActive }) =>
               `hover:text-blue-500 ${
-                isActive ? 'text-blue-400 font-bold' : 'text-gray-300 font-semibold'
+                isActive ? 'text-blue-400 font-semibold' : 'text-gray-300'
               }`
             }
           >
