@@ -15,7 +15,11 @@ import peer from "../assets/icons/peer.png"
 import game from "../assets/icons/gamified.png"
 import campus from "../assets/icons/campus.png"
 import logo from "../assets/icons/mainlogo.png"
-// import path from "path"
+
+// icons2
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
 
 export const mainlogo = logo;
 
@@ -117,6 +121,45 @@ export const section = [
         p :`At Learn2Earn, your education is built around real-world projects, not theory. You'll work hands-on with today's most in-demand technologies — no fluff, no filler — just practical, job-ready skills,
         
         Our dynamic, peer-driven approach is designed to be interactive, immersive, and genuinely engaging, empowering you to learn by doing and grow with every challenge.`
+    }
+];
+
+export const footer = [
+  { h1:'Ready to Start Your Journey?',
+    details: "Whether you’re new to coding or already passionate about tech, our program takes you from beginner to job-ready — with real skills, global opportunities, and zero upfront cost.",
+    btnText : 'Play the Game',
+
+    h2:`Quick Links`,
+    info: `Empowering everyone with world-class tech training and career opportunities.`,
+    down : [
+    {
+        name:'Facebook',
+        icons: FaFacebook,
+        path: '/'
+    },
+    {
+        name:'instagram',
+        icons: FaInstagram,
+        path: '/'
+    },
+    {
+        name:'linkedin',
+        icons: FaLinkedin,
+        path: '/'
+    },
+    {
+        name:'twitter',
+        icons: FaSquareXTwitter,
+        path: '/'
+    },
+    {
+        name:'Youtube',
+        icons: FaYoutube,
+        path: '/'
+    },
+    
+        
+    ]
     }
 ];
 

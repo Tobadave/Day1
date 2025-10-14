@@ -1,4 +1,4 @@
-import { heroData } from "./constants";
+import { heroData } from "../constants";
 
 function HeroSection() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { partners } from './constants';
+import { partners } from '../constants';
 
 const Details = () => {
   return (
@@ -36,6 +36,8 @@ const Details = () => {
             ))}
           </div>
         </div>
+
+        
       ))}
     </div>
   );
