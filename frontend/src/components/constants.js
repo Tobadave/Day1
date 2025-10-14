@@ -40,8 +40,8 @@ export const partners = [
         
         details : [
             {num: "$0", title: "Tution fee"},
-            {num: "2 years", title: "Training"},
-            {num: "2 years", title: "Min job placement"},
+            {num: "2", title: "Training"},
+            {num: "2", title: "Min job placement"},
             {num: "95%", title: "Job placement"},
             {num: "$2k", title: "Average salary"},
         ]
