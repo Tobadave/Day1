@@ -4,28 +4,35 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className="py-5 flex justify-between items-center px-8">
-      <div className="text-xl font-bold">MyLogo</div>
+    <div className="fixed top-0 left-0 w-full z-10 bg-black/40 backdrop-blur-md shadow-md">
+      <div className="py-5 flex justify-between items-center px-8">
+        {/* Logo */}
+        <div className="text-xl font-bold text-white">MyLogo</div>
 
-      <div className="flex gap-6">
-        {navbar.map((item, index) => (
-          <NavLink
-            key={index}
-            to={item.path}
-            className={({ isActive }) =>
-              `hover:text-blue-500 ${
-                isActive ? 'text-blue-400 font-semibold' : 'text-gray-300'
-              }`
-            }
-          >
-            {item.name}
-          </NavLink>
-        ))}
+        {/* Nav Links */}
+        <div className="flex gap-6">
+          {navbar.map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.path}
+              className={({ isActive }) =>
+                `transition-colors duration-200 hover:text-blue-500 ${
+                  isActive
+                    ? 'text-blue-400 font-semibold'
+                    : 'text-gray-300'
+                }`
+              }
+            >
+              {item.name}
+            </NavLink>
+          ))}
+        </div>
+
+        {/* Button */}
+        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          Play the Game
+        </button>
       </div>
-
-      <button className="btn">
-        Play the Game
-      </button>
     </div>
   );
 };
