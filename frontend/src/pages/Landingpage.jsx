@@ -4,6 +4,11 @@ import { Video } from '../components/Landing/Video'
 import Details from '../components/Landing/Details'
 import Footer from '../components/Landing/Footer'
 import Program from '../components/Landing/Program'
+import Section from '../components/Landing/Section'
+import Faq from '../components/Landing/Faq'
+import Info from '../components/Landing/Info'
+// Info
+// Faq
 // Program
 
 
@@ -16,6 +21,8 @@ const Landingpage = () => {
         <Video />
         <Details />
         <Program />
+        <Info />
+        <Faq/>
         <Footer />
       </div>
     </>
