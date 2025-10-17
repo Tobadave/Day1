@@ -8,18 +8,23 @@ const Details = () => {
         <div key={index} className="flex flex-col items-center my-8">
 
           {/* Partners Section */}
-          <div className='flex flex-col items-center w-full max-h-60'>
-          <h1 className="text-3xl my-5 pb-0 font-semibold tracking-wide">{item.title}</h1>
+          <span className='flex flex-col items-center w-full max-h-60'>
+            <h1 className="text-3xl my-5 pb-0 font-semibold">{item.title}</h1>
 
-          {/* Logos Horizontal */}
-          <div className="flex flex-wrap justify-between w-full gap-10 my-4">
-            {item.partners.map((logo, idx) => (
-              <div key={idx} className="flex items-center">
-                <img src={logo} alt="partner logo" className="w-[100px] object-contain" />
+            {/* Logos Section */}
+            <div className="overflow-hidden w-full py-6 pb-10">
+              <div className="flex gap-15 animate-[scroll_25s_linear_infinite]">
+                {[...item.partners, ...item.partners].map((logo, i) => (
+                  <img key={i} src={logo} alt="" className="w-[120px] object-contain flex-shrink-0" />
+                ))}
+
+                {/* {[...x, ...x].map(i, u)=>(
+                  img
+                )} */}
               </div>
-            ))}
+              <style>{`@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}`}</style>
             </div>
-          </div>
+          </span>
 
           <hr className="w-full my-6 border-gray-500" />
 

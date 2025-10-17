@@ -14,7 +14,7 @@ const Faq = () => {
       <div className="py-10 bg-white text-black">
         <span>
           {/* Title */}
-          <div className="text-center">
+          <div className="text-center pt-10">
             <h1 className="font-bold md:text-3xl">{data.h1}</h1>
             <p className="p-1 text-neutral-700">{data.abt}</p>
           </div>
@@ -27,7 +27,7 @@ const Faq = () => {
                   <div>
                     <button
                       onClick={() => toggle(idx)}
-                      className="w-full p-1 py-5 px-3 flex flex-row justify-between items-center"
+                      className="w-full p-1 py-5 px-3 flex flex-row justify-between items-center hover:cursor-pointer"
                     >
                       <h1 className="font-[100px] text-left ">{item.title}</h1>
                       <img
@@ -48,7 +48,7 @@ const Faq = () => {
                       }`}
                     >
                       
-                    <div className='text-sm font-extralight px-2 pb-5'>
+                    <div className='text-sm font-extralight px-4 pb-5'>
                       <p className="p-1 text-neutral-700">{item.p1}</p>
                       <p className="p-1 text-neutral-700">{item.p2}</p>
                     </div>
@@ -59,6 +59,17 @@ const Faq = () => {
               ))}
             </div>
           </div>
+
+          <div className='flex flex-col items-center gap-2 py-10 my-5'>
+            {/* <div className='justify-center'> */}
+            <h1 className='font-bold text-2xl'>{data.h2}</h1>
+            <p className='text-neutral-700'>{data.p2}</p>
+            <button 
+            className='bg-blue-500 rounded-md md:px-6 p-2 mt-3 hover:cursor-pointer hover:bg-blue-600
+            text-white text-sm'>{data.btnText}</button>
+            {/* </div> */}
+          </div>
+
         </span>
       </div>
     </>

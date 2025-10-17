@@ -5,26 +5,32 @@ import { about } from '../constants'
 const Program = () => {
     const data = about[0];
   return (
-    <div className='bg-white text-black'>
-        <span className='text-center'>
+    <div className='bg-white text-black py-5 pt-20'>
+
+        {/* Our Program at a Glance TEXT*/}
+        <div className='text-center'>
             <h1 
             className='font-bold text-3xl py-2'>{data.h1}</h1>
             <h2 className='text-lg'
             >{data.h2}</h2>
-        </span>
+        </div>
 
+
+        {/* Main features boxes */}
         <span 
         className='flex flex-row flex-wrap gap-2 justify-center pt-10'>
             {data.lists.map((item, idx)=>(
-
             <div 
-                className='bg-gray-100 flex flex-col border-1 
-                border-gray-400 rounded-lg p-4 max-w-90 text-gray-700'
+                className='flex flex-col border-1
+                border-gray-300 rounded-lg p-4 max-w-90 text-gray-700
+                hover:bg-black/10 transition-normal| duration-10s'
                 key={idx}>
-                    <div>
+                    {/* the icons */}
+                    <div className='py-2'>
                         <img src={item.icon} alt=""
-                        className='w-10' />
+                        className='w-7' />
                     </div>
+                    {/* the informations */}
                     <p className='font-bold my-2'>
                         {item.title}
                     </p>

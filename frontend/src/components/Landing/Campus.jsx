@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { info } from '../constants';
 
 const Info = () => {
     const data = info[0];
+  const [active, setActive] = useState('Lagos');
+
   return (
     <>
         {/* campus  */}
-        <span className='flex flex-row gap-20 md:py-10'>
+        <span className='flex flex-row gap-20 md:py-20'>
 
             {/*----------- Our Campus FEATURES */}
             <div className='flex flex-1'>
@@ -18,11 +20,11 @@ const Info = () => {
                         {data.p}</h2>
                 </div>
                 {/* The 4 features */}
-                <div className='flex flex-col py-2'>
+                <div className='flex flex-col py-2 gap-2'>
                     {data.ft.map((list, idx)=>(
                         <div key={idx} className='flex flex-row gap-3 py-1 pb-2'>
-                            <img src={list.icon} alt="icon"className='w-5 h-5'/>
-                            <p className='text-sm font-extralight'>{list.p}</p>
+                            <img src={list.icon} alt="icon"className='w-6 h-6'/>
+                            <p className='text-sm font-extralight items-center flex'>{list.p}</p>
                         </div>
                     ))}
                 </div>
@@ -35,20 +37,35 @@ const Info = () => {
             </div>
 
             {/* ---------Picture Right Section */}
-            <div className='flex flex-1  b-300 flex-col'>
-                <div className='flex '>
-                    <img src={data.image}
-                        className='rounded-3xl border-blue-400
-                        object-fill w-full h-90 border-2 shadow-black/90 shadow-lg' alt="" />
+             <div className="flex flex-1 flex-col">
+                {/* Image */}
+                <div className="flex">
+                    <img
+                    src={data.images[active]}
+                    alt={active}
+                    className="rounded-3xl border-2 border-blue-400 object-fill w-full h-90 shadow-black/90 shadow-lg"
+                    />
                 </div>
-                {/* location selection */}
-                <div className='justify-center flex gap-3 py-5'>
-                    {data.button.map((li, idx)=>(
-                        <button key={idx}
-                        className='p-1 px-5 rounded-2xl bg-blue-600 hover:cursor-pointer'>
-                            {li}
-                        </button>
+
+                {/* Location buttons */}
+                <div className="justify-center flex gap-3 py-5">
+                <div className="flex flex-row items-center justify-evenly gap-2 rounded-full bg-white p-2 shadow-inner border border-gray-200">
+                    {data.button.map((city) => (
+                    <button
+                        key={city}
+                        onClick={() => setActive(city)}
+                        className={`relative px-8 py-2 rounded-full text-[12px] font-medium transition-all duration-300 ease-in-out 
+                        shadow-xl hover:shadow-md  hover:cursor-pointer
+                        ${
+                            active === city
+                            ? 'bg-blue-600 text-white scale-105'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        }`}
+                    >
+                        {city}
+                    </button>
                     ))}
+                </div>
                 </div>
             </div>
 

@@ -31,7 +31,8 @@ const Navbar = () => {
         </div>
 
         {/* Button */}
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg
+        text-sm  hover:bg-blue-700 transition  hover:cursor-pointer">
           Play the Game
         </button>
       </div>

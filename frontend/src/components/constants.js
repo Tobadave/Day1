@@ -7,7 +7,10 @@ import partner5 from "../assets/icons/KrystalDigital.webp"
 import partner6 from "../assets/icons/saillab.webp"
 
 // image
-import bgimg from "../assets/pic22.jpeg"
+import lagosImg from "../assets/pic22.jpeg"
+import ilorinImg from "../assets/pic10.jpeg"
+import benueImg from "../assets/pic8.jpeg"
+
 //logo
 import cash from "../assets/icons/cashless.svg"
 import net from "../assets/icons/internet.svg"
@@ -103,11 +106,11 @@ export const about = [
             title:`Gamified, Challenge-Based Curriculum`,
             details:`Progress through levels, earn rewards, and stay engaged with a curriculum designed to be immersive and motivating.`
         },
-        {
-            icon: campus,
-            title:`On-Campus Experience`,
-            details:`Learn in-person at our state-of-the-art campuses in Lagos, Otukpo (Benue), and Ilorin`
-        },
+        // {
+        //     icon: campus,
+        //     title:`On-Campus Experience`,
+        //     details:`Learn in-person at our state-of-the-art campuses in Lagos, Otukpo (Benue), and Ilorin`
+        // },
         
     ],
     btnText : "Play the Game"
@@ -205,32 +208,31 @@ export const faq = [
         p2: `Top performers usually complete it in just 1 to 2 hours. But don’t worry — you can take breaks and play at your own speed. There’s no rush — just focus, play, and enjoy the challenge.`,
       },
     ],
+
+    h2:"Still have questions?",
+    p2:"Support details to capture customers that might be on the fence.",
+    btnText :"Contact Us"
   },
 ];
 
-
 export const info = [
-    {
-        head:"Our Campuses",
-        p:"Step into a space built for focus, collaboration, and growth. All Learn2Earn campuses offer",
-
-        ft : [
-            {icon:internet, p:"High-speed internet"},
-            {icon:secure, p:"24/7 secure access" },
-            {icon:peer, p:'Peer learning zones'},
-            {icon:campus, p:'Modern, purpose-built infrastructure'}
-        ],
-
-        head2:"But it's more than just the facilities",
-        info: "Every day, you'll connect with a supportive community of learners, mentors, and friends who challenge and encourage you. From shared coding challenges to team wins, our campuses are where you grow, belong, and thrive together.",
-        image : bgimg,
- 
-        button :["Lagos", "Ilorin", "Benue"] 
+  {
+    head: "Our Campuses",
+    p: "Step into a space built for focus, collaboration, and growth. All Learn2Earn campuses offer",
+    ft: [
+      { icon: internet, p: "High-speed internet" },
+      { icon: secure, p: "24/7 secure access" },
+      { icon: peer, p: "Peer learning zones" },
+      { icon: campus, p: "Modern, purpose-built infrastructure" }
+    ],
+    head2: "But it's more than just the facilities",
+    info:
+      "Every day, you'll connect with a supportive community of learners, mentors, and friends who challenge and encourage you.",
+    images: {
+      Lagos: lagosImg,
+      Ilorin: ilorinImg,
+      Benue: benueImg
     },
-
-    {
-
-    }
-
-]
-
+    button: ["Lagos", "Ilorin", "Benue"]
+  }
+];

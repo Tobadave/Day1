@@ -19,9 +19,15 @@ const Landingpage = () => {
       <Hero />
       <div className='px-10'>
         <Video />
-        <Details />
+
+        {/* Our Partners */}
+        <Details /> 
+
+        {/* Boxshading */}
         <Program />
+
         <Info />
+        
         <Faq/>
         <Footer />
       </div>

@@ -27,11 +27,19 @@ function HeroSection() {
           </p>
 
         <div className="flex gap-1 my-5">
-        {item.btnText.map((btn, index)=>(
-          <button key={index} className="btn">
-            {btn}
-          </button>
-        ))}
+        {item.btnText.map((btn, index) => (
+        <button
+          key={index}
+          className={`px-8 py-4 rounded-md transition hover:cursor-pointer text-sm font-semibold
+            ${index === 1 
+              ? 'bg-transparent text-blue-600 border border-gray-300 hover:text-black hover:bg-gray-200'  // style for 2nd button
+              : '  border bg-blue-500 text-white hover:bg-blue-600' // style for 1st button
+            }`}
+        >
+          {btn}
+        </button>
+      ))}
+
           <button className=""></button>
         </div>
         </div>
