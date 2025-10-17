@@ -5,7 +5,7 @@ import { about } from '../constants'
 const Program = () => {
     const data = about[0];
   return (
-    <div>
+    <div className='bg-white text-black'>
         <span className='text-center'>
             <h1 
             className='font-bold text-3xl py-2'>{data.h1}</h1>
@@ -18,7 +18,8 @@ const Program = () => {
             {data.lists.map((item, idx)=>(
 
             <div 
-                className='flex flex-col border-1 rounded-lg p-4 max-w-90'
+                className='bg-gray-100 flex flex-col border-1 
+                border-gray-400 rounded-lg p-4 max-w-90 text-gray-700'
                 key={idx}>
                     <div>
                         <img src={item.icon} alt=""

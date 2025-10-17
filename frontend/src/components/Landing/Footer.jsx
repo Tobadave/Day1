@@ -1,5 +1,5 @@
 import React from 'react'
-import { footer, navbar, mainlogo } from '../constants'
+import { footer, navbar, bglogo } from '../constants'
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,45 +10,41 @@ const Footer = () => {
     <>
         <footer className='flex flex-col'>
 
-            {/* powered by */}
-            <div className=''>
+            {/*----------Powered by 01Edu */}
+            <div className='bg-green-50 text-black'>
                 <div className='flex flex-col items-center h-80 md:py-10 text-center
                 justify-center'>
                     <h1
                     className='text-3xl font-semibold font pb-2
                     tracking-wide'>{data.top}</h1>
-                    <h1 className='w-1/2 font-light tracking-tight'>{data.abt}</h1>
+                    <h1 className='w-1/2 font-normal tracking-tight'>{data.abt}</h1>
                 </div>
             </div>
             {/* Ready to Start Your Journey? */}
-            <div className='flex flex-col justify-center items-center gap-5 py-10 h-100'>
+            <div className='bg-gray-800 flex flex-col justify-center items-center gap-5 py-10 h-100'>
                 <h1 className='text-3xl font-semibold'>{data.h1}</h1>
                 <h1 className='w-3/5 text-center
                 text-gray-400'>{data.details}</h1>
-
+            {/* Play the Game btn */}
                 <button className='btn w-fit mt-5'>
                     {data.btnText}
                 </button>
-
                 {/* <hr className="w-full border-gray-500" /> */}
             </div>
 
 
-
-
-            {/* icons */}
-            <div className='flex md:flex-row lg:w-2/4 gap-2 mb-20'>
-
+            {/* ---------------bottom footer */}
+            <div className='bg-gray-800 '>
+            <div className=' flex md:flex-row lg:w-2/4 gap-2 mb-20'>
+                {/*----Info*/}
                 <span className='flex flex-col
-                justify-between flex-1 gap-7'>
-                    {/* logo */}
-                    <img src={mainlogo} alt="Logo" className='
+                    justify-between flex-1 gap-7'>
+                    {/* bg-logo */}
+                    <img src={bglogo} alt="Logo" className='
                     w-40'/>
-
-                    {/* Empowering */}
+                    {/* Empowering everyone... */}
                     <h1 className='text-sm w-3/4 text-gray-300'>{data.info}</h1>
-                    
-                    {/* social links */}
+                    {/* social links icon ...*/}
                     <div className='flex flex-row gap-4'>
                         {data.down.map((item, idx)=>(
                             <div key={idx}>
@@ -58,8 +54,7 @@ const Footer = () => {
                     </div>
                 </span>
 
-
-                {/* Quick Links */}
+                {/*--- Quick Links */}
                 <span className='flex flex-col flex-1 justify-start'>
                     <h1 className='font-semibold md:text-[16px] mb-3'>{data.h2}</h1>
                     
@@ -79,7 +74,7 @@ const Footer = () => {
                     </div>
                 </span>
             </div>
-        
+        </div>
         </footer>
     </>
   )

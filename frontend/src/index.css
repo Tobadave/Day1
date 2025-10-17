@@ -2,8 +2,7 @@
 @plugin "daisyui";
 
 html, body {
-  height: auto;
-  overflow-y: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 

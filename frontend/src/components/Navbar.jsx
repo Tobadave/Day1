@@ -1,4 +1,4 @@
-import React from 'react';
+import { mainlogo } from "./constants";
 import { navbar } from './constants';
 import { NavLink } from 'react-router-dom';
 
@@ -8,7 +8,8 @@ const Navbar = () => {
     border-gray-400 backdrop-blur-md shadow-md">
       <div className="py-5 flex justify-between items-center px-8">
         {/* Logo */}
-        <div className="text-xl font-bold text-black">MyLogo</div>
+        <img src={mainlogo} alt=""className="w-28" />
+        {/* <div className="text-xl font-bold text-black">MyLogo</div> */}
 
         {/* Nav Links */}
         <div className="flex gap-6">

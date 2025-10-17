@@ -17,16 +17,18 @@ import peer from "../assets/icons/peer.svg"
 import game from "../assets/icons/gamified.svg"
 import campus from "../assets/icons/campus.svg"
 import logo from "../assets/icons/icons.svg"
-
-import internet from "../assets/icons/internet.png"
-import secure from "../assets/icons/secure.png"
+import logo2 from "../assets/icons/logo.webp"
+import internet from "../assets/icons/internet.svg"
+import secure from "../assets/icons/secure.svg"
+import arrow from "../assets/icons/droparrow.svg"
 
 // icons2
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
-
+export const bglogo = logo2;
 export const mainlogo = logo;
+export const arrowicon = arrow;
 
 export const navbar = [
     {name:"Home", path:"/"},
@@ -173,42 +175,39 @@ export const footer = [
 ];
 
 export const faq = [
-    {
-        h1: "Frequently asked questions",
-        abt: "Find everything you need to know to get started on your earning journey",
-
-        questions : [
-            {
-                title: "How do I join Learn2Earn?",
-                p1:`Start by playing our free, fun online selection game — it tests your logic, memory, and problem-solving skills.`,
-                p2:`If you pass, you’ll be invited to join the Piscine — a 30-day, in-person coding bootcamp that challenges your grit, collaboration, and learning ability. Only top performers from the Piscine are admitted into the full Learn2Earn program. Think you’ve got what it takes? Play the Game`
-
-            },
-            {
-                title : "Is there an enrolment or application fee?",
-                p1:`No — there are no fees at all. The selection game, the training, and even the job placement are completely free to you.`,
-                p2:`Instead of paying tuition upfront, you’ll repay the cost of your free education by joining our global talent agency after graduation — where you’ll work on exciting international tech projects for a minimum period of 2 years. It’s your chance to gain real-world experience, earn a salary, and give back`
-            },
-            {
-                title : "How does the selection process work?",
-                p1:`It starts with our online selection game — a free, fun challenge designed to test your logic, memory, and problem-solving skills.
-                    If you perform well, you’ll be invited to the Piscine — a 30-day, in-person coding bootcamp held at one of our campuses.`,
-
-                p2:`The Piscine is intense, collaborative, and immersive. You don’t need any tech background — just grit, curiosity, and the ability to learn fast. You’ll work on real coding challenges in a peer-to-peer environment that mimics real-world problem solving. Only the top performers from the Piscine are selected to join the full Learn2Earn program. Think of it as your audition for a life-changing opportunity.`
-            },
-            {
-                title : "Do I need prior programming experience to play the game?",
-                p1:`Not at all. You don’t need any coding background to get started. The game is designed to measure your natural aptitude — things like logic, memory, and problem-solving — not your existing technical skills. If you’re curious, determined, and love a good challenge, you’re exactly who we’re looking for.`,
-                p2:`No experience. Just potential.`
-            },
-            {
-                title : "How long does the game take to complete?",
-                p1:`The game is adaptive, adjusting to your pace and skill level. Most players complete it within a few hours to a couple of days, depending on how much time you commit.`,
-                p2:`Top performers usually complete it in just 1 to 2 hours. But don’t worry — you can take breaks and play at your own speed. There’s no rush — just focus, play, and enjoy the challenge.`
-            }
-        ]
-    }
+  {
+    h1: "Frequently asked questions",
+    abt: "Find everything you need to know to get started on your earning journey",
+    questions: [
+      {
+        title: "How do I join Learn2Earn?",
+        p1: `Start by playing our free, fun online selection game — it tests your logic, memory, and problem-solving skills.`,
+        p2: `If you pass, you’ll be invited to join the Piscine — a 30-day, in-person coding bootcamp that challenges your grit, collaboration, and learning ability. Only top performers from the Piscine are admitted into the full Learn2Earn program. Think you’ve got what it takes? Play the Game.`,
+      },
+      {
+        title: "Is there an enrolment or application fee?",
+        p1: `No — there are no fees at all. The selection game, the training, and even the job placement are completely free to you.`,
+        p2: `Instead of paying tuition upfront, you’ll repay the cost of your free education by joining our global talent agency after graduation — where you’ll work on exciting international tech projects for a minimum period of 2 years. It’s your chance to gain real-world experience, earn a salary, and give back.`,
+      },
+      {
+        title: "How does the selection process work?",
+        p1: `It starts with our online selection game — a free, fun challenge designed to test your logic, memory, and problem-solving skills. If you perform well, you’ll be invited to the Piscine — a 30-day, in-person coding bootcamp held at one of our campuses.`,
+        p2: `The Piscine is intense, collaborative, and immersive. You don’t need any tech background — just grit, curiosity, and the ability to learn fast. You’ll work on real coding challenges in a peer-to-peer environment that mimics real-world problem solving. Only the top performers from the Piscine are selected to join the full Learn2Earn program. Think of it as your audition for a life-changing opportunity.`,
+      },
+      {
+        title: "Do I need prior programming experience to play the game?",
+        p1: `Not at all. You don’t need any coding background to get started. The game is designed to measure your natural aptitude — things like logic, memory, and problem-solving — not your existing technical skills. If you’re curious, determined, and love a good challenge, you’re exactly who we’re looking for.`,
+        p2: `No experience. Just potential.`,
+      },
+      {
+        title: "How long does the game take to complete?",
+        p1: `The game is adaptive, adjusting to your pace and skill level. Most players complete it within a few hours to a couple of days, depending on how much time you commit.`,
+        p2: `Top performers usually complete it in just 1 to 2 hours. But don’t worry — you can take breaks and play at your own speed. There’s no rush — just focus, play, and enjoy the challenge.`,
+      },
+    ],
+  },
 ];
+
 
 export const info = [
     {

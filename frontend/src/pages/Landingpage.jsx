@@ -6,7 +6,7 @@ import Footer from '../components/Landing/Footer'
 import Program from '../components/Landing/Program'
 import Section from '../components/Landing/Section'
 import Faq from '../components/Landing/Faq'
-import Info from '../components/Landing/Info'
+import Info from '../components/Landing/Campus'
 // Info
 // Faq
 // Program
