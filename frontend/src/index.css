@@ -5,6 +5,13 @@ html, body {
   font-family: "Poppins", sans-serif;
 }
 
+@layer components {
+  .section-width {
+    @apply px-3 md:px-10;
+  }
+}
+
+
 
 /* 
 :root {

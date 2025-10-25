@@ -3,9 +3,9 @@ import { partners } from '../constants';
 
 const Details = () => {
   return (
-    <div className="text-white">
+    <div className="text-white section-width bg-blue-600">
       {partners.map((item, index) => (
-        <div key={index} className="flex flex-col items-center my-8">
+        <div key={index} className="flex flex-col items-center py-8">
 
           {/* Partners Section */}
           <span className='flex flex-col items-center w-full max-h-60'>

@@ -34,7 +34,7 @@ const Footer = () => {
 
 
             {/* ---------------bottom footer */}
-            <div className='bg-gray-800 '>
+            <div className='bg-gray-800 section-width'>
             <div className=' flex md:flex-row lg:w-2/4 gap-2 mb-20'>
                 {/*----Info*/}
                 <span className='flex flex-col

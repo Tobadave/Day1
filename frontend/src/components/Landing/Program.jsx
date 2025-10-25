@@ -5,7 +5,7 @@ import { about } from '../constants'
 const Program = () => {
     const data = about[0];
   return (
-    <div className='bg-white text-black py-5 pt-20'>
+    <div className='section-width bg-white text-black py-5 pt-20'>
 
         {/* Our Program at a Glance TEXT*/}
         <div className='text-center'>

@@ -6,7 +6,7 @@ const Info = () => {
   const [active, setActive] = useState('Lagos');
 
   return (
-    <>
+    <div className='section-width'>
         {/* campus  */}
         <span className='flex flex-row gap-20 md:py-20'>
 
@@ -70,7 +70,7 @@ const Info = () => {
             </div>
 
         </span>
-    </>
+    </div>
   )
 }
 

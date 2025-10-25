@@ -11,7 +11,7 @@ const Faq = () => {
 
   return (
     <>
-      <div className="py-10 bg-white text-black">
+      <div className="section-width py-10 bg-white text-black">
         <span>
           {/* Title */}
           <div className="text-center pt-10">
