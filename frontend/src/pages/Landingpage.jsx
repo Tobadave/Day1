@@ -17,20 +17,16 @@ const Landingpage = () => {
   return (
     <>
       <Hero />
-      <div className='px-0'>
+      {/* <div className='px-0'> */}
         <Video />
-
         {/* Our Partners */}
         <Details /> 
-
         {/* Boxshading */}
         <Program />
-
         <Info />
-        
         <Faq/>
         <Footer />
-      </div>
+      {/* </div> */}
     </>
   )
 }

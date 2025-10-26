@@ -2,15 +2,18 @@ import { heroData } from "../constants";
 
 function HeroSection() {
   return (
+    <div className="w-full">
     <section className="relative flex flex-col items-center justify-center py-25 text-center bg-white 
       [background-image:linear-gradient(to_right,rgba(0,0,0,0.05)_2px,transparent_2px),linear-gradient(to_bottom,rgba(0,0,0,0.05)_1px,transparent_1px)] 
       [background-size:100px_100px]">
 
       {heroData.map((item, index)=>(
-        <div key={index} className="flex flex-col items-center font-normal pt-20">     
+        <div key={index} className="flex flex-col items-center font-normal pt-20 mx-10">     
         <div 
           className="bg-green-100 text-gray-800 border-1
-          text-sm rounded-sm p-2 border-gray-300">
+          text-sm rounded-sm p-2 border-gray-300 flex
+          mx-0">
+            {/* green pop-up */}
             {item.info}</div>  
 
         <span className="uppercase text-6xl my-5 font-semibold">
@@ -45,7 +48,9 @@ function HeroSection() {
         </div>
       ))}
     </section>
+    </div>
   );
 }
+
 
 export default HeroSection
