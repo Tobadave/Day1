@@ -8,7 +8,7 @@ const Info = () => {
   return (
     <div className='section-width'>
         {/* campus  */}
-        <span className='flex flex-row gap-20 md:py-20'>
+        <span className='flex flex-col md:flex-row gap-20 py-10 md:py-20'>
 
             {/*----------- Our Campus FEATURES */}
             <div className='flex flex-1'>
@@ -43,7 +43,7 @@ const Info = () => {
                     <img
                     src={data.images[active]}
                     alt={active}
-                    className="rounded-3xl border-2 border-blue-400 object-fill w-full h-90 shadow-black/90 shadow-lg"
+                    className="rounded-3xl border-2 border-blue-400 object-fill w-full h-50 md:h-90 shadow-black/90 shadow-lg"
                     />
                 </div>
 

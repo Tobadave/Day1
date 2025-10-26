@@ -21,7 +21,7 @@ const Faq = () => {
 
           {/* Question section */}
           <div className="flex items-center justify-center">
-            <div className="flex flex-col justify-center w-2/4 py-10">
+            <div className="flex flex-col justify-center w-7/8 py-10 text-sm md:text-md ">
               {data.questions.map((item, idx) => (
                 <div key={idx}>
                   <div>

@@ -8,7 +8,7 @@ function HeroSection() {
       [background-size:100px_100px]">
 
       {heroData.map((item, index)=>(
-        <div key={index} className="flex flex-col items-center font-normal pt-20 mx-10">     
+        <div key={index} className="flex flex-col items-center font-normal pt-20 section-width">     
         <div 
           className="bg-green-100 text-gray-800 border-1
           text-sm rounded-sm p-2 border-gray-300 flex

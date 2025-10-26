@@ -15,7 +15,7 @@ import Info from '../components/Landing/Campus'
 
 const Landingpage = () => {
   return (
-    <>
+    <div className='w-full'>
       <Hero />
       {/* <div className='px-0'> */}
         <Video />
@@ -27,7 +27,7 @@ const Landingpage = () => {
         <Faq/>
         <Footer />
       {/* </div> */}
-    </>
+    </div>
   )
 }
 

@@ -7,9 +7,10 @@ html, body {
 
 @layer components {
   .section-width {
-    @apply px-2  md:px-10;
+    @apply w-full max-w-5xl mx-auto px-6;
   }
 }
+
 
 
 
