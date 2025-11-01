@@ -13,16 +13,16 @@ const Info = () => {
             {/*----------- Our Campus FEATURES */}
             <div className='flex flex-1'>
                 <div className='flex flex-col p-1'>
-                <div className='mb-3'>
-                    <h1 className='text-3xl font-semibold mb-3'>
+                <div className='mb-5'>
+                    <h1 className='text-3xl font-semibold mb-1'>
                         {data.head}</h1>
-                    <h2 className='text-sm'>
+                    <h2 className='text-md'>
                         {data.p}</h2>
                 </div>
                 {/* The 4 features */}
                 <div className='flex flex-col py-2 gap-2'>
                     {data.ft.map((list, idx)=>(
-                        <div key={idx} className='flex flex-row gap-3 py-1 pb-2'>
+                        <div key={idx} className='flex flex-row gap-3 py-1 pb-0'>
                             <img src={list.icon} alt="icon"className='w-6 h-6'/>
                             <p className='text-sm font-extralight items-center flex'>{list.p}</p>
                         </div>
