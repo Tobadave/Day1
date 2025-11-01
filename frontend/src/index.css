@@ -7,7 +7,8 @@ html, body {
 
 @layer components {
   .section-width {
-    @apply w-full max-w-5xl mx-auto px-6;
+    /* @apply w-full max-w-5xl mx-auto px-6; */
+    @apply px-13
   }
 }
 
